@@ -151,7 +151,7 @@
 
 // ====================== About Us ========================
 .section-about {
-    padding: 10rem 0 15rem;
+    padding: 10rem 0rem;
     border-bottom: 1px solid #dbdbdb;
 
 
@@ -176,7 +176,7 @@
 // ===================== Section Quote ==============
 .section-quote {
     background-color: var(--clr-blue-light);
-    padding: 15rem 0;
+    padding: 15rem 0 10rem;
     
     .quote-container {
         position: relative;
@@ -188,10 +188,10 @@
         font-size: 9rem;
         color: var(--clr-gray-light);
         position: absolute;
-        top: -70px;
+        top: -8rem;
         left: 0;
         z-index: -1;
-        opacity: .7;
+        opacity: .5;
     }
     h1 {
         font-family: 'Cormorant Garamond', serif;
@@ -567,8 +567,51 @@
 
 
 
+// ==================== Section-Featured =========================
+.section-featured {
+    padding: 10rem 0;
+
+    .featured-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: space-around;
+    }
+    
+    img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+// End of section Featured
 
 
+
+// =============== Section video ==============
+.section-video {
+    padding: 12rem 0 15rem;
+
+    .video {
+        width: 100%;
+        border-radius: .5rem;
+        aspect-ratio: 1.8;
+        height: auto;
+        -webkit-transition: all .4s cubic-bezier(0.74, 0.07, 0.58, 0.89);
+        transition: all .4s cubic-bezier(0.74, 0.07, 0.58, 0.89);
+        box-shadow: 0 .2rem .2rem rgba(0, 0, 0, 0.4);
+
+
+        &:hover,
+        &:focus {
+            transform: scale(1.04);
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.266);
+        }
+    }
+}
+// End of Section Video
 
 
 

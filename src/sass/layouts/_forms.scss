@@ -13,15 +13,17 @@
         outline: none;
         padding: 1rem;
         font-size: inherit;
-        background-color: var(--clr-gray-light);
+        background-color: #e6f0f7;
         border: 1px solid rgb(172, 172, 172);
         margin-bottom: 1rem;
         resize: none;
         border-radius: 10px;
         @include ease(.4s);
 
+
+
         &:focus, &:valid {
-            border: 1px solid var(--clr-green);
+            border: 1px solid var(--clr-blue);
             width: 100%;
         }
     }
