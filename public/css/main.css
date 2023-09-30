@@ -1014,9 +1014,34 @@ footer a:focus, footer a:hover {
 
 .section-quote {
   background-color: var(--clr-blue-light);
-  padding: 10rem 0;
+  padding: 15rem 0;
 }
-
+.section-quote .quote-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.section-quote .quote-left {
+  font-size: 9rem;
+  color: var(--clr-gray-light);
+  position: absolute;
+  top: -70px;
+  left: 0;
+  z-index: -1;
+  opacity: 0.7;
+}
+.section-quote h1 {
+  font-family: "Cormorant Garamond", serif;
+  line-height: 1.2;
+  font-size: 60px;
+}
+.section-quote h3 {
+  margin-top: 4rem;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1;
+}
 .about-gallery {
   position: relative;
   padding: 3rem 0;
