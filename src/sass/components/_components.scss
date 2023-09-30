@@ -185,18 +185,18 @@
 .btn-primary {
     background-color: var(--clr-blue);
     color: #fff;
-    border: 2px solid var(--clr-cream);
+    border: 2px solid var(--clr-blue);
 
     &:hover, &:focus {
-      background-color: var(--clr-cream);
-      color: var(--clr-green);
-      border: 2px solid var(--clr-green);
+      background-color: var(--clr-gray-light);
+      color: var(--clr-blue-dark);
+      border: 2px solid var(--clr-blue);
     }
 }
 .btn-neutral {
-    background-color: var(--clr-cream);
+    background-color: var(--clr-gray-light);
     color: #000;
-    border: 2px solid var(--clr-green);
+    border: 2px solid var(--clr-blue);
 
     &:hover, &:focus {
       background-color: #fff;

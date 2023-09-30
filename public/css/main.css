@@ -350,18 +350,18 @@ section {
 .btn-primary {
   background-color: var(--clr-blue);
   color: #fff;
-  border: 2px solid var(--clr-cream);
+  border: 2px solid var(--clr-blue);
 }
 .btn-primary:hover, .btn-primary:focus {
-  background-color: var(--clr-cream);
-  color: var(--clr-green);
-  border: 2px solid var(--clr-green);
+  background-color: var(--clr-gray-light);
+  color: var(--clr-blue-dark);
+  border: 2px solid var(--clr-blue);
 }
 
 .btn-neutral {
-  background-color: var(--clr-cream);
+  background-color: var(--clr-gray-light);
   color: #000;
-  border: 2px solid var(--clr-green);
+  border: 2px solid var(--clr-blue);
 }
 .btn-neutral:hover, .btn-neutral:focus {
   background-color: #fff;
@@ -953,7 +953,6 @@ footer a:focus, footer a:hover {
 .section-hero .hero-container {
   width: 100%;
   min-height: 100vh;
-  padding-bottom: 7rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
@@ -1393,11 +1392,20 @@ footer a:focus, footer a:hover {
     grid-template-columns: 1fr;
   }
   .section-hero .hero-container .hero-name {
-    font-size: 90px;
+    font-size: 15rem;
     margin-top: 0;
+    padding-top: 5rem;
   }
+  .section-hero .hero-container .hero-image {
+    margin-top: -15rem;
+  }
+
   .section-about .about-container .about-img img {
     width: 100%;
+  }
+
+  .section-quote .quote-heading {
+    font-size: 5rem;
   }
 
   .section-value .value_img {
@@ -1413,11 +1421,15 @@ footer a:focus, footer a:hover {
 }
 @media screen and (max-width: 500px) {
   .section-hero .hero-container .hero-name {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   .section-value .value_img {
     height: 200px;
+  }
+
+  .section-quote .quote-heading {
+    font-size: 4rem;
   }
 
   .section-testimonials .testimonial__text {
@@ -1426,7 +1438,7 @@ footer a:focus, footer a:hover {
 }
 @media screen and (max-width: 325px) {
   .section-hero .hero-container .hero-name {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 .section-privacy {
