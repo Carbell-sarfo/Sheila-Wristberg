@@ -7,6 +7,10 @@
   margin-bottom: 2rem;
 }
 
+.mb-50 {
+  margin-bottom: 5rem;
+}
+
 @keyframes fadein {
   from {
     opacity: 0;
@@ -92,14 +96,14 @@ body {
   line-height: 2;
   transition: all 0.4s ease-in-out;
   font-family: "Cormorant Garamond", serif;
-  font-family: "Mate", serif;
   font-family: "Nunito Sans", sans-serif;
+  font-family: "Mate", serif;
   color: var(--clr-gray-dark-2);
   font-size: 1.6rem;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 p, i, span, article {
@@ -108,7 +112,7 @@ p, i, span, article {
 }
 
 a {
-  font-family: "Helveitca rounded", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: bold;
   cursor: pointer;
   font-size: inherit;
@@ -118,6 +122,7 @@ img {
   width: 100%;
   height: auto;
   display: inline-block;
+  line-height: 1;
 }
 
 section {
@@ -620,12 +625,13 @@ section {
 }
 
 .section-footer {
-  background: var(--clr-black);
+  background-image: linear-gradient(to bottom, #2B4658, #000000);
   color: var(--clr-gray-light);
   padding: 8rem 0 10rem;
   width: 100%;
   position: relative;
   z-index: 1;
+  text-align: center;
 }
 .section-footer .footer-container {
   width: 100%;
@@ -635,89 +641,52 @@ section {
   grid-template-columns: 1fr;
   gap: 5rem 1rem;
 }
-.section-footer .contact-left img {
-  width: 220px;
-  height: auto;
-  margin-left: -30px;
+.section-footer a {
+  display: inline-block;
+  color: var(--clr-blue);
+  transition: 0.4s;
 }
-.section-footer .contact-left ul {
-  list-style: none;
-  width: 100%;
+.section-footer a:hover, .section-footer a:focus {
+  color: var(--clr-gray-light);
+  transform: skew(10deg) scale(1.1);
 }
-.section-footer .contact-details {
-  margin: 2rem 0;
-}
-.section-footer .contact-details li {
-  margin-bottom: 3rem;
-  letter-spacing: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  font-size: 1.4rem;
-}
-.section-footer .contact-details li a {
-  color: var(--clr-gray-dark-2);
-  transition-duration: 0.4s;
-  transition-timing-function: ease-in-out;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  text-overflow: wrap;
-}
-.section-footer .contact-details li a:hover, .section-footer .contact-details li a:focus {
-  transform: scale(1.1) skew(5deg, 3deg);
-  color: var(--clr-primary);
-}
-.section-footer .contact-details li i {
-  font-size: 1.5rem;
-  margin-right: 1rem;
+.section-footer .social-list {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 40%;
-  border: 2px solid var(--clr-gray-light);
-}
-.section-footer .contact-details li span {
-  font-weight: bolder;
-  font-size: 1.2rem;
-}
-.section-footer .nav-social {
-  display: flex;
-  align-items: center;
-  justify-content: left;
   list-style: none;
+  margin-top: 5rem;
 }
-.section-footer .nav-social li:not(:last-child) {
+.section-footer .social-list .social-item:not(:last-child) {
   margin-right: 2rem;
 }
-.section-footer .nav-social .social-link {
+.section-footer .social-list .social-link {
   display: flex;
-  width: 50px;
-  height: 50px;
-  border-radius: 40%;
-  background: var(--clr-green);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #2B4658, #000000);
   align-items: center;
   justify-content: center;
-  color: var(--clr-cream);
+  color: var(--clr-gray-light);
   box-shadow: 0 4px 10px rgba(5, 0, 41, 0.274);
-  border: 3px solid var(--clr-gray-light);
+  border: 2px solid var(--clr-gray-light);
   transition-duration: 0.4s;
   transition-timing-function: ease-in-out;
 }
-.section-footer .nav-social .social-link:hover, .section-footer .nav-social .social-link:focus {
+.section-footer .social-list .social-link:hover, .section-footer .social-list .social-link:focus {
   box-shadow: 0 2px 5px rgba(5, 0, 41, 0.44);
   transform: translateY(-2px);
 }
-.section-footer .nav-social .social-link i {
+.section-footer .social-list .social-link i {
   font-size: 2rem;
 }
-.section-footer .nav-social .social-link:hover, .section-footer .nav-social .social-link:focus {
+.section-footer .social-list .social-link:hover, .section-footer .social-list .social-link:focus {
   transform: scale(1.15) translateY(2px);
-  outline: 4px solid var(--clr-gray-dark-2);
+  outline: 4px solid var(--clr-gray-light);
   outline-offset: 4px;
-  color: var(--clr-green);
-  background-color: var(--clr-cream);
+  color: var(--clr-blue-dark);
+  background: var(--clr-gray-light);
 }
 .section-footer .policy {
   display: flex;
@@ -750,6 +719,15 @@ footer {
 footer p {
   font-size: 1.3rem;
   color: var(--clr-gray-dark);
+}
+footer a {
+  display: inline-block;
+  color: inherit;
+  transition: 0.4s;
+}
+footer a:focus, footer a:hover {
+  color: red;
+  transform: scale(1.1) skew(10deg);
 }
 
 /* Begin Media Queries*/

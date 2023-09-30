@@ -31,21 +31,21 @@ body {
     line-height: 2.0;
     transition: all .4s ease-in-out;
     font-family: 'Cormorant Garamond', serif;
-    font-family: 'Mate', serif;
     font-family: 'Nunito Sans', sans-serif; 
+    font-family: 'Mate', serif;
     color: var(--clr-gray-dark-2);
     font-size: 1.6rem;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif; 
 }
 p, i, span, article {
     font-family: inherit;
     font-size: inherit;
 }
 a {
-    font-family: "Helveitca rounded", sans-serif;
+    font-family: 'Nunito Sans', sans-serif; 
     font-weight: bold;
     cursor: pointer;
     font-size: inherit;
@@ -54,6 +54,7 @@ img {
     width: 100%;
     height: auto;
     display: inline-block;
+    line-height: 1;
 }
 
 
